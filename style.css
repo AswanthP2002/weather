@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+.card{
+    background:linear-gradient(to top left,rgb(31, 152, 223),rgb(18, 230, 201));
+    width: 90%;
+    max-width: 450px;
+    margin: 100px auto 0;
+    color: #fff;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 20px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.search input{
+    height: 60px;
+    background-color: #fff;
+    color: #222;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-right: 16px;
+}
+.search button{
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+}
+.Weather-icon{
+    width: 170px;
+    height: 170px;
+    margin-top: 50px;
+}
+.Weather h1{
+    font-size: 60px;
+}
+.Weather h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 25px;
+    margin-top: -6px;
+}
+@media(max-width:1024px){
+    .Weather h1{
+        font-size: 40px;
+    }
+    .Weather h2{
+        font-size: 35px;
+    }
+    .search input{
+        width: 100px;
+    }
+    .humidity, .wind{
+        font-size: 15px;
+    }
+    .search input{
+        font-size: 15px;
+    }
+    .col img{
+        width: 25px;
+    }
+    .details{
+        justify-content: space-between;
+    }
+    
+}
+.Weather{
+    display: none;
+}
+.warning-text{
+    color: rgb(88, 83, 83);
+    font-size: 14px;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.warning{
+    text-align: start;
+    display: none;
+    height: fit-content;
+}

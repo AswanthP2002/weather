@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This app is created for showing the weather details 
+    of cities, This app is designed using html, css and javascript">
+    <meta name="author" content="Aswanth P">
+    <title>Weather app using html,css and javascript</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+    <div class="card">
+        <div class="search">
+            <input type="search" placeholder="enter city name" spellcheck="false" name="searchbox">
+            <button onclick="searchCity()"><img src="Images/images/search.png" alt="search icon image"></button>
+        </div>
+        <div class="warning"><p class="warning-text">Invalid City name</p></div>
+        <div class="Weather">
+            <img src="Images/images/rain.png" class="Weather-icon" alt="rain image">
+            <h1 class="temp">°C</h1>
+            <h2 class="city">Chennai</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="Images/images/humidity.png" alt="humidity image">
+                        <div>
+                        <p class="humidity">50%</p>
+                        <p>humidity</p>
+                        </div>
+                </div>
+                <div class="col">
+                    <img src="Images/images/wind.png" alt="wind image">
+                        <div>
+                        <p class="wind">14 km/h</p>
+                        <p>wind speed</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+</html>
